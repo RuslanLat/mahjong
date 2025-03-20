@@ -22,46 +22,28 @@ export class AudioModel {
     const self = this;
     // ===== 🎼 AUDIO =====
     this.audioLoader.load(
-      "mahjong/audio/nature.ogg",
+      "https://cdn.freesound.org/previews/791/791115_5287430-lq.mp3",
       function (buffer) {
         self.sound.setBuffer(buffer);
         self.sound.setLoop(true);
         self.sound.setVolume(0.7);
-      },
-      function (xhr) {
-        console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
-      },
-      function (err) {
-        console.log("An error happened", err);
       }
     );
 
     this.audioLoader.load(
-      "mahjong/audio/danger.mp3",
+      "https://cdn.freesound.org/previews/734/734432_2733407-lq.mp3",
       function (buffer) {
         self.soundDanger.setBuffer(buffer);
         self.soundDanger.setVolume(0.7);
-      },
-      function (xhr) {
-        console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
-      },
-      function (err) {
-        console.log("An error happened", err);
       }
     );
 
     this.audioLoader.load(
-      "mahjong/audio/airplane.wav",
+      "https://cdn.freesound.org/previews/707/707869_12340115-lq.mp3",
       function (buffer) {
         self.soundAirplane.setBuffer(buffer);
         self.sound.setLoop(true);
         self.soundAirplane.setVolume(0.7);
-      },
-      function (xhr) {
-        console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
-      },
-      function (err) {
-        console.log("An error happened", err);
       }
     );
   }
