@@ -22,7 +22,7 @@ export class AudioModel {
     const self = this;
     // ===== 🎼 AUDIO =====
     this.audioLoader.load(
-      "/audio/nature.ogg",
+      "mahjong/audio/nature.ogg",
       function (buffer) {
         self.sound.setBuffer(buffer);
         self.sound.setLoop(true);
@@ -37,7 +37,7 @@ export class AudioModel {
     );
 
     this.audioLoader.load(
-      "/audio/danger.mp3",
+      "mahjong/audio/danger.mp3",
       function (buffer) {
         self.soundDanger.setBuffer(buffer);
         self.soundDanger.setVolume(0.7);
@@ -51,7 +51,7 @@ export class AudioModel {
     );
 
     this.audioLoader.load(
-      "/audio/airplane.wav",
+      "mahjong/audio/airplane.wav",
       function (buffer) {
         self.soundAirplane.setBuffer(buffer);
         self.sound.setLoop(true);
