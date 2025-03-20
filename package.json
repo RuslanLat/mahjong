@@ -1,0 +1,19 @@
+{
+  "name": "mahjong",
+  "version": "1.0.0",
+  "description": "tree.js game",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "author": "'Ruslan Latipov'",
+  "dependencies": {
+    "lil-gui": "^0.20.0",
+    "three": "^0.174.0"
+  },
+  "devDependencies": {
+    "vite": "^6.2.2"
+  }
+}
